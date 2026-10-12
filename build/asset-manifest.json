@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.87bf3399.css",
+    "main.js": "/static/js/main.33dfb54a.js",
+    "static/js/453.db16e6e2.chunk.js": "/static/js/453.db16e6e2.chunk.js",
+    "static/media/skoda-kushaq.jpg": "/static/media/skoda-kushaq.ad9c6c3bb6f615b3638d.jpg",
+    "static/media/filter-service.jpg": "/static/media/filter-service.cb02dce7dc8f54d2780e.jpg",
+    "static/media/music-system.jpg": "/static/media/music-system.7cfbf811251184843d2c.jpg",
+    "static/media/brake-service.jpg": "/static/media/brake-service.4ce868718115598937b3.jpg",
+    "static/media/engine-service.jpg": "/static/media/engine-service.70f939702a6ab0d49f1d.jpg",
+    "static/media/battery-service.jpg": "/static/media/battery-service.c56f77fbd9f8bfe49e1a.jpg",
+    "static/media/tyre-service.jpg": "/static/media/tyre-service.4bf3bdac3fee32ac6317.jpg",
+    "static/media/skoda-slavia.jpg": "/static/media/skoda-slavia.5f7a4a2ee457a22f9bdf.jpg",
+    "static/media/tata-nexon.jpeg": "/static/media/tata-nexon.0dbfd876024bd521d4e2.jpeg",
+    "static/media/safari.jpg": "/static/media/safari.353517b42206cd4208db.jpg",
+    "static/media/harrier.jpg": "/static/media/harrier.d73e10c21a9dfeab8a8c.jpg",
+    "static/media/seltos.jpeg": "/static/media/seltos.4757f833649b50a6e2d5.jpeg",
+    "static/media/interior.jpg": "/static/media/interior.ac778f75cea47ee46e70.jpg",
+    "static/media/innova.jpeg": "/static/media/innova.09f272b766c1bb882569.jpeg",
+    "static/media/seat-cover.jpg": "/static/media/seat-cover.1400dc0012619b74eebf.jpg",
+    "static/media/ertiga.jpg": "/static/media/ertiga.02a1c95afd2c3183bc15.jpg",
+    "static/media/carlogo.png": "/static/media/carlogo.e75af621f15f6081b11d.png",
+    "static/media/tata.jpeg": "/static/media/tata.cd16059c8201f6e01f99.jpeg",
+    "static/media/tyres.jpeg": "/static/media/tyres.fd77b91017681b98af5c.jpeg",
+    "static/media/toyota.png": "/static/media/toyota.886bc3778f38fc9696ea.png",
+    "static/media/Maruti.jpg": "/static/media/Maruti.ed75fd337fed3510d827.jpg",
+    "static/media/xl6.jpg": "/static/media/xl6.7f4fd006749599c55488.jpg",
+    "static/media/carens.jpeg": "/static/media/carens.4c43af6cd5e847a0d229.jpeg",
+    "static/media/skoda.png": "/static/media/skoda.43337b005f292b27caa0.png",
+    "static/media/kia.png": "/static/media/kia.90595b8c0decd1fd3723.png",
+    "static/media/lights.jpeg": "/static/media/lights.3e2361f6107b2633781b.jpeg",
+    "index.html": "/index.html",
+    "main.87bf3399.css.map": "/static/css/main.87bf3399.css.map",
+    "main.33dfb54a.js.map": "/static/js/main.33dfb54a.js.map",
+    "453.db16e6e2.chunk.js.map": "/static/js/453.db16e6e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87bf3399.css",
+    "static/js/main.33dfb54a.js"
+  ]
+}
