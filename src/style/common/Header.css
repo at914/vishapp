@@ -1,0 +1,119 @@
+/* Main Header */
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 12px 40px;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Logo */
+.car-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+
+  border-radius: 50%;
+  background: white;
+  padding: 6px;
+
+  box-shadow:
+    0 0 15px rgba(59,130,246,0.4),
+    0 0 30px rgba(59,130,246,0.2);
+
+  transition: all 0.3s ease;
+}
+
+.car-logo:hover {
+  transform: scale(1.08) rotate(5deg);
+}
+
+/* Heading */
+.app-heading {
+  margin: 0;
+
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #60a5fa,
+    #2563eb
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-transform: uppercase;
+}
+
+/* Navigation Alignment */
+.chat-header nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Hover Effect */
+.chat-header:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* Responsive Tablet */
+@media (max-width: 992px) {
+  .chat-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .chat-header nav {
+    justify-content: center;
+  }
+
+  .app-heading {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .car-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .app-heading {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .header-left {
+    flex-direction: column;
+  }
+}

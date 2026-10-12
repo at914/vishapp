@@ -1,0 +1,30 @@
+.modal {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-dialog {
+
+    width: 100% !important;
+    position: fixed !important;
+    left: 35%;
+    width: 100%;
+}
+
+.modal-content {
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-custom,
+.nav-overflow,
+.nav {
+    overflow: visible !important;
+}

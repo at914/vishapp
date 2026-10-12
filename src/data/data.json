@@ -1,0 +1,76 @@
+{
+    "sidebar": [
+        {
+            "id": "1",
+            "title": "Seat Covers"
+        },
+        {
+            "id": "2",
+            "title": "Music System"
+        },
+        {
+            "id": "3",
+            "title": "Lights"
+        },
+        {
+            "id": "4",
+            "title": "Tyres/Wheels"
+        },
+        {
+            "id": "5",
+            "title": "Door Visors/ Window Curtains/ Laminations"
+        }
+    ],
+    "carData": [
+        {
+            "id": "1",
+            "title": "Seat Covers",
+            "desc": "Choose Your Seat Covers from a wide range of options",
+            "price": "₹7500",
+            "Material": "Leather",
+            "Colors": "Chocolaty Brown",
+            "Made": "Crosslinked Leather",
+            "image": "/images/seat-cover.jpg"
+        },
+        {
+            "id": "2",
+            "title": "Music System",
+            "desc": "Upgrade your car's audio experience",
+            "price": "₹10000",
+            "Material": "Plastic",
+            "Colors": "Black",
+            "Made": "Intell Audio",
+            "image": "/images/music-system.jpg"
+        },
+        {
+            "id": "3",
+            "title": "Lights",
+            "desc": "Upgrade your car's lighting experience",
+            "price": "₹1500",
+            "Material": "Plastic",
+            "Colors": "Black",
+            "Made": "Jabra Lighting",
+            "image": "/images/lights.jpg"
+        },
+        {
+            "id": "4",
+            "title": "Tyres/Wheels",
+            "desc": "Upgrade your car's tire and wheel experience",
+            "price": "₹7500",
+            "Material": "Rubber",
+            "Colors": "Black",
+            "Made": "Goodyear",
+            "image": "/images/tyres.jpg"
+        },
+        {
+            "id": "5",
+            "title": "Door Visors/ Window Curtains/ Laminations",
+            "desc": "Upgrade your car's interior experience",
+            "price": "₹750",
+            "Material": "Plastic",
+            "Colors": "Black",
+            "Made": "Intell Interiors",
+            "image": "/images/interior.jpg"
+        }
+    ]
+}

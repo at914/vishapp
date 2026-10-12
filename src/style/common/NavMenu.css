@@ -1,0 +1,134 @@
+/* Navbar Container */
+nav {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+  padding: 12px 25px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+  border-radius: 12px;
+}
+
+/* Navigation Wrapper */
+.nav-overflow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menu */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Menu Items */
+.nav-item {
+  list-style: none;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background: rgba(255,255,255,0.15);
+  color: #38bdf8 !important;
+  transform: translateY(-2px);
+}
+
+/* Active Link */
+.nav-link.active {
+  background: linear-gradient(
+    135deg,
+    #0ea5e9,
+    #2563eb
+  ) !important;
+
+  color: white !important;
+
+  box-shadow: 0px 4px 15px rgba(37,99,235,0.4);
+}
+.nav-link.active::after {
+  width: 70%;
+}
+
+/* Underline Animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 70%;
+}
+
+/* Filter Button */
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #2563eb
+  ) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 10px 20px !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37,99,235,0.4);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .nav {
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+.navbar-custom {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+.navbar-custom {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    overflow: visible !important;
+}
+
+.nav-overflow {
+    overflow: visible !important;
+}
+
+.nav {
+    overflow: visible !important;
+}
