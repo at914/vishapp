@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import carlogo from "../assets/carlogo.png";
 import NavMenu from "./NavMenu";
 import "../style/common/Header.css";
 import FilterPopup from "../components/FilterPopup";
-import carData from "../data/carData";
 
 const Header = () => {
-    const [filteredCars, setFilteredCars] = useState(carData);
+    
     return (
         <header className="chat-header">
             <div className="header-left">
@@ -16,19 +15,7 @@ const Header = () => {
                 </h2>
             </div>
             <NavMenu />
-            <FilterPopup
-              onApplyFilter={(filters) => {
-                const filtered = carData.filter((car) => {
-                  return (
-                    (!filters.make || car.make === filters.make) &&
-                    (!filters.fuelType ||
-                      car.fuelType === filters.fuelType)
-                  );
-                });
-
-                setFilteredCars(filtered);
-              }}
-            />
+            <FilterPopup/>
         </header>
     );
 };

@@ -1,8 +1,6 @@
 
 import { NavLink } from "react-router-dom";
 import "../style/common/NavMenu.css";
-import carData from "../data/carData";
-import FilterPopup from "../components/FilterPopup";
 
 function NavMenu() {
   
