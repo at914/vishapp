@@ -1,163 +1,159 @@
 /* Page Background */
 
 body {
-  background: #f8fafc;
+    background: #f8fafc;
 }
 
-/* Card */
 
-.car-card {
-  background: #ffffff;
-  border-radius: 20px;
-
-  overflow: hidden;
-
-  cursor: pointer;
-
-  box-shadow:
-    0 8px 25px rgba(0,0,0,0.08);
-
-  transition: all 0.4s ease;
-
-  height: 100%;
-}
-
-.car-card:hover {
-  transform: translateY(-10px);
-
-  box-shadow:
-    0 15px 40px rgba(0,0,0,0.15);
-}
-
-/* Image Wrapper */
-
-.car-image-container {
-  position: relative;
-  overflow: hidden;
-}
 
 /* Car Image */
 
 .card-img-top {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
 
-  transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
-.car-card:hover .card-img-top {
-  transform: scale(1.08);
-}
 
-/* Budget Badge */
-
-.budget-badge {
-  position: absolute;
-
-  top: 15px;
-  right: 15px;
-
-  background: linear-gradient(
-    135deg,
-    #2563eb,
-    #0ea5e9
-  );
-
-  color: white;
-
-  padding: 7px 15px;
-
-  border-radius: 20px;
-
-  font-weight: 600;
-  font-size: 14px;
-}
 
 /* Body */
 
 .card-body {
-  padding: 20px;
+    padding: 20px;
 }
 
-/* Car Name */
+/* Container */
+.car-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    border: 1px solid #f1f1f1;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Section */
+.car-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.car-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.car-card:hover .car-image {
+    transform: scale(1.08);
+}
+
+/* Budget Badge */
+.budget-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #ff6b00, #ff9100);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.4);
+}
+
+/* Card Body */
+.card-content {
+    padding: 20px;
+}
 
 .car-name {
-  font-size: 24px;
-  font-weight: 700;
-
-  color: #0f172a;
-
-  margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 12px;
 }
 
-/* Manufacturer */
+.car-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 .car-make {
-  color: #475569;
-
-  font-size: 16px;
-
-  margin-bottom: 10px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
 }
-
-/* Fuel Badge */
 
 .fuel-badge {
-  display: inline-block;
-
-  background: #ecfeff;
-
-  color: #0891b2;
-
-  padding: 8px 15px;
-
-  border-radius: 20px;
-
-  font-weight: 600;
-
-  margin-bottom: 15px;
+    background: #eef4ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-/* Button */
-
+/* View Details Button */
 .view-details-btn {
-  width: 100%;
-
-  border: none;
-
-  padding: 12px;
-
-  border-radius: 30px;
-
-  background: linear-gradient(
-    135deg,
-    #0ea5e9,
-    #2563eb
-  );
-
-  color: white;
-
-  font-weight: 600;
-
-  transition: all 0.3s ease;
+    width: 100%;
+    border: none;
+    background: linear-gradient(135deg,
+            #0d6efd,
+            #0056d2);
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .view-details-btn:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 8px 18px rgba(37,99,235,0.35);
+    background: linear-gradient(135deg,
+            #0056d2,
+            #003b91);
+    transform: scale(1.02);
 }
 
-/* Responsive */
-
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .card-img-top {
-    height: 200px;
-  }
+    .car-image {
+        height: 200px;
+    }
 
-  .car-name {
-    font-size: 20px;
-  }
+    .car-name {
+        font-size: 1.2rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .car-details {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+.display-5 {
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.text-muted {
+  font-size: 18px;
 }

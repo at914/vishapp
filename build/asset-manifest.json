@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.87bf3399.css",
-    "main.js": "/static/js/main.33dfb54a.js",
+    "main.css": "/static/css/main.d81eca1f.css",
+    "main.js": "/static/js/main.370ecd3d.js",
     "static/js/453.db16e6e2.chunk.js": "/static/js/453.db16e6e2.chunk.js",
     "static/media/skoda-kushaq.jpg": "/static/media/skoda-kushaq.ad9c6c3bb6f615b3638d.jpg",
     "static/media/filter-service.jpg": "/static/media/filter-service.cb02dce7dc8f54d2780e.jpg",
@@ -30,12 +30,12 @@
     "static/media/kia.png": "/static/media/kia.90595b8c0decd1fd3723.png",
     "static/media/lights.jpeg": "/static/media/lights.3e2361f6107b2633781b.jpeg",
     "index.html": "/index.html",
-    "main.87bf3399.css.map": "/static/css/main.87bf3399.css.map",
-    "main.33dfb54a.js.map": "/static/js/main.33dfb54a.js.map",
+    "main.d81eca1f.css.map": "/static/css/main.d81eca1f.css.map",
+    "main.370ecd3d.js.map": "/static/js/main.370ecd3d.js.map",
     "453.db16e6e2.chunk.js.map": "/static/js/453.db16e6e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87bf3399.css",
-    "static/js/main.33dfb54a.js"
+    "static/css/main.d81eca1f.css",
+    "static/js/main.370ecd3d.js"
   ]
 }

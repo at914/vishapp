@@ -9,59 +9,48 @@ function Manufacturers({ cars }) {
   };
 
   return (
-    <div className="container pt-5">
+    <div className="container py-5">
       <div className="row">
+        <div className="text-center mb-5">
+          <h1 className="fw-bold display-5">
+            Explore Our Premium Cars
+          </h1>
+          <p className="text-muted">
+            Discover the perfect vehicle for your lifestyle and budget
+          </p>
+        </div>
         {cars.map((car) => (
-          <div className="col-md-4 mb-4" key={car.id}>
+          <div className="col-lg-4 col-md-6 mb-4" key={car.id}>
             <div
               className="car-card"
               onClick={() => handleCarClick(car.id)}
             >
               <div className="car-image-container">
-                <img
-                  src={car.image}
-                  className="card-img-top"
-                  alt={car.name}
-                />
+                <img src={car.image} alt={car.name} className="car-image" />
 
                 <span className="budget-badge">
-                  ₹{car.budget} Lakh
+                  ₹ {car.budget} Lakh
                 </span>
               </div>
 
-              <div className="card-body">
+              <div className="card-content">
                 <h4 className="car-name">{car.name}</h4>
 
-                <p className="car-make">
-                  🚘 {car.make}
-                </p>
+                <div className="car-details">
+                  <span className="car-make">
+                    🚘 {car.make}
+                  </span>
 
-                <p className="fuel-badge">
-                  ⛽ {car.fuelType}
-                </p>
+                  <span className="fuel-badge">
+                    ⛽ {car.fuelType}
+                  </span>
+                </div>
 
                 <button className="view-details-btn">
-                  View Details
+                  View Details →
                 </button>
               </div>
             </div>
-            {/* <div
-              className="card h-100"
-              style={{ cursor: "pointer" }}
-              onClick={() => handleCarClick(car.id)}
-            >
-              <img
-                src={car.image}
-                className="card-img-top"
-                alt={car.name}
-              />
-              <div className="card-body">
-                <h5>{car.name}</h5>
-                <p>Make: {car.make}</p>
-                <p>Budget: ₹{car.budget} Lakh</p>
-                <p>Fuel: {car.fuelType}</p>
-              </div>
-            </div> */}
           </div>
         ))}
       </div>
