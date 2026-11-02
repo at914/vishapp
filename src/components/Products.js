@@ -6,9 +6,12 @@ import musicSystem from "../assets/accessories/music-system.jpg";
 import lights from "../assets/accessories/lights.jpeg";
 import tyres from "../assets/accessories/tyres.jpeg";
 import interior from "../assets/accessories/interior.jpg";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../store/cartSlice";
 
 
 function Products() {
+    const dispatch = useDispatch();
     const [activeId, setActiveId] = useState("1");
 
     /* const header = data.header; */
@@ -30,6 +33,17 @@ function Products() {
     const handleSidebarClick = (id) => {
         setActiveId(id);
     };
+    const handleAddToCart = () => {
+        dispatch(
+            addToCart({
+                id: selectedItem.id,
+                title: selectedItem.title,
+                desc: selectedItem.desc,
+                price: selectedItem.price,
+                image: imageMap[selectedItem.id]
+            })
+        );
+    };
 
     return (
         <div className="click-to-view">
@@ -44,7 +58,7 @@ function Products() {
                     <p className="cp-click-to-view__description">
                         You can explore a wide range of car accessories, from seat covers to music systems, lights, tyres, and interior enhancements. Select an accessory from the left menu to view its details and specifications.
                     </p>
-                </div> 
+                </div>
 
                 <div className="wrapper">
 
@@ -68,42 +82,6 @@ function Products() {
                             ))}
                         </div>
                     </div>
-
-                    {/* Right Side Content */}
-                    {/* <div className="content">
-                        {selectedItem ? (
-                            <>
-                                <h1>{selectedItem.title}</h1>
-
-                                <p>{selectedItem.desc}</p>
-
-                                <h3>
-                                    Price: {selectedItem.price}
-                                </h3>
-
-                                <p>
-                                    Material: {selectedItem.Material}
-                                </p>
-
-                                <p>
-                                    Colors: {selectedItem.Colors}
-                                </p>
-
-                                <p>
-                                    Made: {selectedItem.Made}
-                                </p>
-
-                                <div className="actions">
-                                    <button className="btn btn-primary">
-                                        Add To Cart
-                                    </button>
-                                </div>
-                            </>
-                        ) : (
-                            <p>Select a cake from the left menu.</p>
-                        )}
-                    </div>
- */}
 
                     <div className="content">
                         {selectedItem ? (
@@ -153,7 +131,10 @@ function Products() {
                                     </div>
 
                                     <div className="actions">
-                                        <button className="btn btn-primary">
+                                        <button
+                                            className="btn btn-primary"
+                                            onClick={handleAddToCart}
+                                        >
                                             Add To Cart
                                         </button>
 

@@ -1,9 +1,12 @@
 
 import { NavLink } from "react-router-dom";
 import "../style/common/NavMenu.css";
+import { useSelector } from "react-redux";
 
 function NavMenu() {
-  
+  const cartItems = useSelector(
+    (state) => state.cart.items
+  );
 
   return (
     <nav className="navbar-custom">
@@ -52,6 +55,16 @@ function NavMenu() {
               }
             >
               Reports
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/cart"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Cart ({cartItems.length})
             </NavLink>
           </li>
 

@@ -9,6 +9,7 @@ import Products from "./Products";
 import Services from "./Services";
 import Reports from "./Reports";
 import FilteredCars from "./FilteredCars";
+import Cart from "./Cart";
 
 function Main() {
     const filteredCars = carData;
@@ -42,6 +43,7 @@ function Main() {
                 path="/car/:id"
                 element={<CarDetails />}
             />
+            <Route path="/cart" element={<Cart />} />
 
         </Routes>
     );
